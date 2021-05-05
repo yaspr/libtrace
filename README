@@ -1,0 +1,14 @@
+# A template for building a library call tracer
+
+# For testing:
+
+    $ cd src
+    $ make
+    $ cd ..
+    $ cd target
+    $ make
+    $ make test
+
+# The tracer should generate a file named: libtrace.out
+
+    # less libtrace.out

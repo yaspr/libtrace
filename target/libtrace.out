@@ -1,0 +1,54 @@
+ [0;32m [#LIBTRACE#] :[0m captured 2 calls to cblas_dgemm
+
+call #0 (2021-05-05 16:12:55):
+	PID: 161552
+	TID: 161552
+	NUMA node: 0
+	CPU core : 8
+	layout: 101
+	TransA: 111
+	TransB: 111
+	M     : 2000
+	N     : 2000
+	K     : 2000
+	alpha : 1.000000
+	A(ptr): 0x7fc3bb5d2040
+	lda   : 2000
+	B(ptr): 0x7fc3b974d040
+	ldb   : 2000
+	beta  : 1.000000
+	C(ptr): 0x7fc3b78c8040
+	ldc   : 2000
+	ptr   : 0x7fc3bdb4c670
+	backtrace:
+		/usr/lib/libc.so.6(__libc_start_main+0xd5) [0x7fc3bd956b25]
+		./gemm(_start+0x2e) [0x55753f23b61e]
+
+
+
+call #1 (2021-05-05 16:12:59):
+	PID: 161552
+	TID: 161552
+	NUMA node: 0
+	CPU core : 12
+	layout: 101
+	TransA: 111
+	TransB: 111
+	M     : 2000
+	N     : 2000
+	K     : 2000
+	alpha : 1.000000
+	A(ptr): 0x7fc3bb5d2040
+	lda   : 2000
+	B(ptr): 0x7fc3b974d040
+	ldb   : 2000
+	beta  : 1.000000
+	C(ptr): 0x7fc3b78c8040
+	ldc   : 2000
+	ptr   : 0x7fc3bdb4c670
+	backtrace:
+		./gemm(main+0x490) [0x55753f23b530]
+		/usr/lib/libc.so.6(__libc_start_main+0xd5) [0x7fc3bd956b25]
+		./gemm(_start+0x2e) [0x55753f23b61e]
+
+
